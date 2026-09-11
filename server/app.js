@@ -7,6 +7,9 @@ app.get('/',(req,res) => {
 
 const port = 5000;
 
+const pool = require('./config/db');
+
+
 app.listen(port, () => {
     console.log(`Server runnnig at port ${port}`);
 });
